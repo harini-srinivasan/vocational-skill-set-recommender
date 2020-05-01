@@ -1,0 +1,226 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spectrum</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<script src="{% static 'js/asd-js.js' %}"></script>
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="{% static 'img/apple-touch-icon.png' %}">
+<link rel="apple-touch-icon" sizes="72x72" href="{% static 'img/apple-touch-icon-72x72.png' %}">
+<link rel="apple-touch-icon" sizes="114x114" href="{% static 'img/apple-touch-icon-114x114.png' %}">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="{% static 'css/bootstrap.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome/css/font-awesome.css' %}">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="{% static 'css/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/nivo-lightbox/nivo-lightbox.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/nivo-lightbox/default.css' %}">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+<!-- Navigation
+    ==========================================-->
+	<nav id="menu" class="navbar navbar-default navbar-fixed-top on">
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand page-scroll" href="#"><i class="fa fa-play fa-rotate-270"></i> AUTISM</a> </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class=""><a href="/home/news" class="page-scroll">News</a></li>
+        <li><a href="/home/all" target="sam"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+<!-- Header -->
+<header id="header">
+  <div class="intro">
+    <div class="container">
+      <div class="row">
+        <div class="intro-text">
+          <h1>SURVEY</h1>
+          <p></p>
+          <a href="#about" class="btn btn-custom btn-lg page-scroll">Click Here...</a> </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- About Section -->
+<div id="about">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>Fill In and Submit</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-9">
+        <div class="about-text ">
+  <div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-lg btn-outline-primary" type="button" data-toggle="collapse" data-target="#collapseOne">
+          SET-1 
+        </button>
+      </h2>
+    </div>
+
+    <div  id="collapseOne" class="collapse" data-parent="#accordionExample">
+	<form>
+	Closes the hand around an object placed in a hand<br><br>
+		<input type="radio" name="cooking" id="c11"value=0>No &nbsp
+		<input type="radio" name="cooking" id="c12" value=1>Rarely &nbsp
+		<input type="radio" name="cooking" id="c13" value=2>Sometimes &nbsp
+		<input type="radio" name="cooking" id="c14" value=3 checked>Very well &nbsp
+		<br><br>
+	Reaches for and graps objects.<br><br>
+		<input type="radio" name="cooking1" id="c21" value=0>No &nbsp
+		<input type="radio" name="cooking1" id="c22" value=1>Rarely &nbsp
+		<input type="radio" name="cooking1" id="c23" value=2>Sometimes &nbsp
+		<input type="radio" name="cooking1" id="c24" value=3 checked>Very well &nbsp
+		<br><br>
+	Uses both the hands at the same time when handling an object<br><br>
+		<input type="radio" name="cooking2" id="c31" value=0>No &nbsp
+		<input type="radio" name="cooking2" id="c32" value=1>Rarely &nbsp
+		<input type="radio" name="cooking2" id="c33" value=2>Sometimes &nbsp
+		<input type="radio" name="cooking2" id="c34"value=3 checked>Very well &nbsp
+		<br><br>
+	Picks up small objects using thumbs and fingers only<br><br>
+	    <input type="radio" name="cooking3" id="c41" value=0>No &nbsp
+		<input type="radio" name="cooking3" id="c42" value=1>Rarely &nbsp
+		<input type="radio" name="cooking3" id="c43" value=2>Sometimes &nbsp
+		<input type="radio" name="cooking3" id="c44" value=3 checked>Very well &nbsp
+		<br><br>
+	Carries cups/plates without spilling<br><br>
+		<input type="radio" name="cooking4" id="c51" value=0>No &nbsp
+		<input type="radio" name="cooking4" id="c52" value=1>Rarely &nbsp
+		<input type="radio" name="cooking4" id="c53" value=2>Sometimes &nbsp
+		<input type="radio" name="cooking4" id="c54" value=3 checked>Very well &nbsp
+		<br><br>
+	  </form>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-lg btn-outline-primary collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo">
+          SET-2
+       </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+	<form>
+     Makes experssions of anger/happiness etc on face as per situation.<br><br>
+	    <input type="radio" name="d1" id="d11">No &nbsp
+		<input type="radio" name="d1" id="d12">Rarely &nbsp
+		<input type="radio" name="d1" id="d13">Sometimes &nbsp
+		<input type="radio" name="d1" id="d14" checked>Very well &nbsp
+		<br><br>
+	 Changes the tone and rythm of voice and hand movements.<br><br>
+		<input type="radio" name="d2" id="d21">No &nbsp
+		<input type="radio" name="d2" id="d22">Rarely &nbsp
+		<input type="radio" name="d2" id="d23">Sometimes &nbsp
+		<input type="radio" name="d2" id="d24" checked>Very well &nbsp
+		<br><br>
+	 Responds to questions Or indicates Yes(or)No.<br><br>
+		<input type="radio" name="d3" id="d31">No &nbsp
+		<input type="radio" name="d3" id="d32">Rarely &nbsp
+		<input type="radio" name="d3" id="d33">Sometimes &nbsp
+		<input type="radio" name="d3" id="d34" checked>Very well &nbsp
+		<br><br>
+	 Imitates actions/words either singularly(or)all at once<br><br>
+	    <input type="radio" name="d4" id="d41">No &nbsp
+		<input type="radio" name="d4" id="d42">Rarely &nbsp
+		<input type="radio" name="d4" id="d43">Sometimes &nbsp
+		<input type="radio" name="d4" id="d44" checked>Very well &nbsp
+		<br><br>
+	 Is flexible with hands, fingers and body<br><br>
+	    <input type="radio" name="d4" id="d51">No &nbsp
+		<input type="radio" name="d4" id="d52">Rarely &nbsp
+		<input type="radio" name="d4" id="d53">Sometimes &nbsp
+		<input type="radio" name="d4" id="d54" checked>Very well &nbsp
+		<br><br>
+		
+	 
+	 
+    </form>
+  </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-lg btn-outline-primary collapsed" type="button" data-toggle="collapse" data-target="#collapseThree">
+          SET-3
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div>
+	  <form>
+	  Is enthusiastic in taking part in writing practices(i.e)grammer education.<br><br>
+	    <input type="radio" name="dr1" id="dr11">No &nbsp
+	    <input type="radio" name="dr1" id="dr12">Rarely &nbsp
+		<input type="radio" name="dr1" id="dr13" >Sometimes &nbsp
+		<input type="radio" name="dr1" id="dr14" checked>Very well &nbsp
+		<br><br>
+	  Is interested in writin essays on topics given.<br><br>
+	    <input type="radio" name="dr2" id="dr21">No &nbsp
+		<input type="radio" name="dr2" id="dr22">Rarely &nbsp
+		<input type="radio" name="dr2" id="dr23">Sometimes &nbsp
+		<input type="radio" name="dr2" id="dr24" checked>Very well &nbsp
+		<br><br>
+	  Is creative with answers and depicting his/her thoughts.<br><br>
+	  <input type="radio" name="dr3" id="dr31">No &nbsp
+		<input type="radio" name="dr3" id="dr32">Rarely &nbsp
+		<input type="radio" name="dr3" id="dr33">Sometimes &nbsp
+		<input type="radio" name="dr3" id="dr34" checked>Very well &nbsp
+		<br><br>
+	  Is enthusiastic towards drawing depictions/figures for given scenario.<br><br>
+	  <input type="radio" name="dr4" id="dr41">No &nbsp
+		<input type="radio" name="dr4" id="dr42">Rarely &nbsp
+		<input type="radio" name="dr4" id="dr43">Sometimes &nbsp
+		<input type="radio" name="dr4" id="dr44" checked>Very well &nbsp
+		<br><br>
+	  Is good with learning vocabulary and playing such games<br><br>
+	   <input type="radio" name="dr5" id="dr51">No &nbsp
+		<input type="radio" name="dr5" id="dr52">Rarely &nbsp
+		<input type="radio" name="dr5" id="dr53">Sometimes &nbsp
+		<input type="radio" name="dr5" id="dr54" checked>Very well &nbsp
+		<br><br>
+		<button class="btn btn-primary p-4" type="submit" id="survey-submit">SUBMIT SURVEY</button>
+	  </form>
+    </div>
+	</div>
+</div>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="{% static 'js/jquery.1.11.1.js' %}"></script> 
+<script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script> 
+<script type="text/javascript" src="{% static 'js/SmoothScroll.js' %}"></script> 
+<script type="text/javascript" src="{% static 'js/nivo-lightbox.js' %}"></script> 
+<script type="text/javascript" src="{% static 'js/jquery.isotope.js' %}"></script> 
+<script type="text/javascript" src="{% static 'js/jqBootstrapValidation.js' %}"></script> 
+<script type="text/javascript" src="{% static 'js/contact_me.js' %}"></script> 
+<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
